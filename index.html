@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.A4-sheet{
+            border: 2px solid black;
+            width: 595px;
+            height: 842px;
+            background-color: #FFFFFF;
+            display: flex;
+        }
+/* ##################################################################################################################### */
+        
+        div.kiri{
+            width: 219px;
+            height: 842px;
+            background-color: #454545;
+        }
+
+        img.kiri-atas{
+            width: 219px;
+            height: 280px;
+        }
+
+        div.kiri-bawah{
+            height: 562px;
+        }
+
+        div.kiri-bawah > p#pribadi{
+            color: #FFF;
+            font-family: Inria Serif;
+            font-size: 15px;
+            font-weight: 400;
+            margin-left: 10px;
+        }
+
+        div.kiri-bawah > div.line-1{
+            width: 170px;
+            height: 2px;
+            background: #FFD466;
+            margin-left: 10px;
+        }
+
+        div.kiri-bawah > ul > li{
+            color: #FFF;
+            font-family: Inria Serif;
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+/* ##################################################################################################################### */
+
+        div.kanan{
+            width: 376px;
+        }
+
+        div.kanan > div.kotak-kuning{
+            width: 376px;
+            height: 147px;
+            background-color: #FFD466;
+            margin-top: 46px;
+        }
+
+        div.kanan > div.kotak-kuning > p#nama{
+            color: #000;
+            font-family: Inria Serif;
+            font-size: 30px;
+            font-weight: 300;
+            padding-top: 44px;
+        }
+
+        div.kanan > div.kotak-kuning > p#nama > span{
+            font-weight: 700;
+        }
+
+        div.kanan > p.sub-judul{
+            color: #000;
+            font-family: Inria Serif;
+            font-size: 15px;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-left: 16px;
+            margin-bottom: 0;
+        }
+
+        div.kanan > div.line-2{
+            width: 300px;
+            height: 2px;
+            background: #000;
+            margin-top: 8px;
+            margin-left: 16px;
+        }
+
+        div.kanan > ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        div.kanan > ul > li{
+            color: #000;
+            font-family: Inria Serif;
+            font-size: 15px;
+            font-weight: 400;
+            list-style: none;
+            margin-left: 16px;
+            margin-top: 5px;
+        }
+
+        div.kanan > div#pendidikan-formal{
+            /* background-color: bisque; */
+            margin-left: 16px;
+            margin-top: 8px;
+        }
+
+        div.kanan > div#pendidikan-formal > div#atas, div#bawah{
+            display: flex;
+        }
+
+        div.atas-kanan, div.bawah-kanan{
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="A4-sheet">
+
+        <div class="kiri">
+
+            <img src="image/my_face.png" alt="my face" class="kiri-atas">
+
+            <div class="kiri-bawah">
+                <p id="pribadi">PRIBADI</p>
+
+                <div class="line-1"></div>
+
+                <ul>
+                    <li>Mampu menyesuaikan diri dengan lingkungan baru dengan mudah</li>
+
+                    <li>Lebih suka dengan hal yang teratur atau yang sudah ada standarnya</li>
+
+                    <li>Tidak mudah emosian</li>
+
+                    <li>Sulit untuk bergaul dengan orang yang baru dikenal</li>
+
+                    <li>Sulit mengerjakan tugas tanpa ketetapan yang jelas</li>
+
+                    <li>Mampu Bertanggung jawab</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+<!-- ################################################################################################################# -->
+        
+        <div class="kanan">
+
+            <div class="kotak-kuning">
+                <p id="nama"> <span>BRIAN</span> HANSON SIWEN</p>
+            </div>
+
+            <p class="sub-judul">Data Pribadi</p>
+
+            <div class="line-2"></div>
+            
+            <ul>
+                <li>Tempat, Tanggal Lahir : Palembang, 3 Januari 2008</li>
+
+                <li>Jenis Kelamin : Laki-laki</li>
+
+                <li>Agama : Buddha</li>
+
+                <li>WhatsApp : +62 811-7886-401</li>
+
+                <li>Line : brian-aja</li>
+            </ul>
+
+            <p class="sub-judul">Pendidikan Formal</p>
+
+            <div class="line-2"></div>
+
+            <div id="pendidikan-formal">
+
+                <div id="atas">
+                    <div class="atas-kiri"> 
+                        <p>2013 - 2019</p> 
+                    </div>
+
+                    <div class="atas-kanan">
+                        <p>Paramount School Palembang</p>
+                    </div>
+                </div>
+
+                <div id="bawah">
+                    <div class="bawah-kiri"> 
+                        <p>2019 - 2022</p> 
+                    </div>
+
+                    <div class="bawah-kanan">
+                        <p>Kusuma Bangsa Palembang</p>
+                    </div>   
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
